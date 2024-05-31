@@ -11,15 +11,23 @@
 <body>
     <div id="page">
         <div id="banner">
-          <img src="https://lebomtomboti.github.io/Swaggapictures/delivery.gif" alt="Delivery">
+          <img src="https://lebomtomboti.github.io/Swaggapictures/delivery.gif" alt="Delivery" height="85" width="300">
         </div>
         <div id="navigation">
-          <img src="https://lebomtomboti.github.io/Swaggapictures/links.gif" alt="Swagge Fashion Logo">
+          <img src="https://lebomtomboti.github.io/Swaggapictures/links.gif" alt="navigation" usemap="#navmap" height="56" width="560">
+          <map name="navmap">
+            <area shape="rect" coords="10,5,95,35" href="order.html" alt="Home">
+            <area shape="rect" coords="10,5,190,35" href="order.html" alt="Services">
+            <area shape="rect" coords="10,5,300,35" href="order.html" alt="Product">
+            <area shape="rect" coords="10,5,440,35" href="order.html" alt="Order status">
+            <area shape="rect" coords="10,5,555,35" href="order.html" alt="Contact Us">
+          </map>
         </div>
         <div id="sidebar">
-            <img src="https://lebomtomboti.github.io/Swaggapictures/swegga.jpg" alt="Links">
+            <img src="https://lebomtomboti.github.io/Swaggapictures/swegga.jpg" alt="Swegga Fashion" height="350" width="150">
         </div>
-        <div class="main">
+        <div id="main">
+          <form name="orders">
           <h1>Product Summary</h1>
             <table>
                 <thead>
@@ -34,7 +42,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a href="female"></a>Female Ski Jackets</td>
+                    <td><a href="female.html"></a>Female Ski Jackets</td>
                     <td>
                       <select>
                         <option>Small</option>
@@ -46,15 +54,15 @@
                       <select>
                         <option>Red</option>
                         <option>Pink</option>
-                        <option>Purple</option>
+                        <option>Black</option>
                       </select>
                     </td>
                     <td>150.95</td>
-                    <td><input type="text" name="quantity_female" value="2"></td>
-                    <td>R301.90</td>
+                    <td><input type="text" name="femaleQuantity" value="2"></td>
+                    <td id="femaleTotal">R301.90</td>
                   </tr>
                   <tr>
-                    <td><a href="male"></a>Male Ski Jackets</td>
+                    <td><a href="male.html"></a>Male Ski Jackets</td>
                     <td>
                       <select>
                         <option>Small</option>
@@ -66,26 +74,28 @@
                       <select>
                         <option>Red</option>
                         <option>Blue</option>
-                        <option>Black</option>
+                        <option>White</option>
                       </select>
                     </td>
                     <td>180.95</td>
-                    <td><input type="text" name="quantity_male" value="4"></td>
-                    <td>R723.80</td>
+                    <td><input type="text" name="maleQuantity" value="4"></td>
+                    <td id="maleTotal">R723.80</td>
                   </tr>
                   <tr>
-                    <td colspan="5">Click to confirm and process your order:</td>
+                    <td colspan="4">Click to confirm and process your order:</td>
                     <td><button type="button" onclick="calculateTotal()">Total Price</button></td>
-                    <td colspan="5">Total</td>
+                    <td colspan="5">total</td>
                     <td>R1025.70</td>
                   </tr>
                 </tbody>
             </table>
+          </form>
         </div>
     </div>
+    <script src="index.js"></script>
     <footer>
         <div id="footer">
-          <p class="copyright">©2014 Swegga Fashion - Examination number</p>
+          <p class="copyright">©2020 Swegga Fashion - Lebo Mtomboti</p>
         </div>
     </footer>
 </body>
