@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swegga Fashion</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Swagge Fashion</title>
+    <link rel="stylesheet" href="styling.css">
 </head>
-<body>
-  <div>
-    <header>
-    <img src="https://lebomtomboti.github.io/Swaggapictures/delivery.gif">
-    </header>
-    <nav>
-    <img src="https://lebomtomboti.github.io/Swaggapictures/links.gif">
-    </nav>
-    <div id="sidebar">
-      <img src="https://lebomtomboti.github.io/Swaggapictures/swegga.jpg">
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Description</th>
-          <th>Size</th>
-          <th>Colour</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tr>
-        <td><a href="female">Female Ski Jackets</a></td>
-        <td>
-          <form>
-            <select>
-              <option>small</option>
-              <option>Large</option>
-              <option>Medium</option>
-            </select>
-            <td>
-              <select>
-                <option>Red</option>
-                <option>Pink</option>
-                <option>Purple</option>
-              </select>
-            </td>
-            <td>150.95</td>
-            <td><input type="number"></td>
-            <td>R301.90</td>
-      </tr>
-      <tr>
-        <td><a href="Male">Male Ski Jackets</a></td>
-        <td>
-        <select>
-          <option>small</option>
-          <option>Large</option>
-          <option>Medium</option>
-        </select>
-       </td>
-       <td>
-        <select>
-          <option>Red</option>
-          <option>Pink</option>
-          <option>Purple</option>
-        </select>
-       </td>
-       <td>180.95</td>
-       <td><input type="number"></td>
-       <td>R723.80</td>
-        </form>
 
-        </td>
-      </tr>
-    </table>
-  <footer>
-    <p class="copyright">©2014 Swegga Fashion-Examination number</p>
-  </footer>
+<body>
+    <div id="page">
+        <div id="banner">
+          <img src="https://lebomtomboti.github.io/Swaggapictures/delivery.gif" alt="Delivery">
+        </div>
+        <div id="navigation">
+          <img src="https://lebomtomboti.github.io/Swaggapictures/links.gif" alt="Swagge Fashion Logo">
+        </div>
+        <div id="sidebar">
+            <img src="https://lebomtomboti.github.io/Swaggapictures/swegga.jpg" alt="Links">
+        </div>
+        <div class="main">
+          <h1>Product Summary</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Size</th>
+                        <th>Colour</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="female"></a>Female Ski Jackets</td>
+                    <td>
+                      <select>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select>
+                        <option>Red</option>
+                        <option>Pink</option>
+                        <option>Purple</option>
+                      </select>
+                    </td>
+                    <td>150.95</td>
+                    <td><input type="text" name="quantity_female" value="2"></td>
+                    <td>R301.90</td>
+                  </tr>
+                  <tr>
+                    <td><a href="male"></a>Male Ski Jackets</td>
+                    <td>
+                      <select>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                      </select>
+                    </td>
+                    <td>180.95</td>
+                    <td><input type="text" name="quantity_male" value="4"></td>
+                    <td>R723.80</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Click to confirm and process your order:</td>
+                    <td><button type="button" onclick="calculateTotal()">Total Price</button></td>
+                    <td colspan="5">Total</td>
+                    <td>R1025.70</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+          <p class="copyright">©2014 Swegga Fashion - Examination number</p>
+        </div>
+    </footer>
 </body>
 </html>
